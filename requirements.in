@@ -1,3 +1,4 @@
-dbt
+dbt-core
+dbt-bigquery
 dtspec
 sqlfluff
