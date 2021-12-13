@@ -9,6 +9,15 @@ models:
         tests:
           - unique
           - not_null
+
+        # We add metrics in lightdash in a `meta` block within the column definition.
+        # A single column can have multiple metrics.
+        meta:
+          metrics:
+            - name: num_unique_companies # this is the name of the metric.
+              type: count_distinct # this is the type of calculation that's being done
+
+
       - name: name
         description: "Company name"
         tests:
@@ -19,9 +28,16 @@ models:
         description: "Date company was created at"
       - name: total_funding_to_date
         description: "Total amount of funding (USD) raised as of last update"
+        meta:
+          metrics:
+            - name: total_funding_to_date # this is the name of the metric.
+              type: sum # this is the type of calculation that's being done
+            - name: average_funding_to_date # this is the name of the metric.
+              type: average # this is the type of calculation that's being done
       - name: updated_at
         description: "Date record last updated at"
-      
+
+    
 
   # - name: stg_orders
   #   columns:
