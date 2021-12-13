@@ -1,7 +1,7 @@
 [sqlfluff]
 verbose = 0
 nocolor = False
-dialect = ansi
+dialect = bigquery
 #templater = jinja
 templater = dbt
 rules = None

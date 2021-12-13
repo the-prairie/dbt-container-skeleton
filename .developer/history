@@ -1,0 +1,29 @@
+dbt debug
+gcloud auth application-default login   --scopes=https://www.googleapis.com/auth/bigquery,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/iam.test
+quit
+dbt debug
+gcloud auth application-default login   --scopes=https://www.googleapis.com/auth/bigquery,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/iam.test
+dbt debug
+inv
+gcloud auth application-default login   --scopes=https://www.googleapis.com/auth/bigquery,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/iam.test
+dbt debug
+echo $PROJECT_ID
+gcloud auth application-default login   --scopes=https://www.googleapis.com/auth/bigquery,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/iam.test
+dbt debug
+dbt run --models staging
+dbt run --models staging
+dbt run --models staging
+dbt run --models staging
+sqlfluff lint models
+sqlfluff lint models
+sqlfluff fix  models
+sqlfluff lint models
+sqlfluff fix models
+sqlfluff lint models
+sqlfluff lint models
+sqlfluff fix models
+dbt run --models staging
+gcloud auth application-default login   --scopes=https://www.googleapis.com/auth/bigquery,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/iam.test
+dbt run --models staging
+dbt run --models staging
+dbt run --models staging

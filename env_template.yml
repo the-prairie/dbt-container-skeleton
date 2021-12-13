@@ -15,22 +15,10 @@ description: |
   when a dbt-shell is started will override the defaults defined here.
 
 variables:
-  POSTGRES_HOST:
-    description: Name of the postgres host.
-    default: host.docker.internal
+  PROJECT_ID:
+    description: Name of the project on GCP
+    default: my.gcp.project.id
 
-  POSTGRES_USER:
-    description: Postgres username.
-    default: yournamehere
-
-  POSTGRES_PASSWORD:
-    description: Postgres password.  May leave blank if running Postgres locally on host.
-    default: Null
-    secret: True
-
-  POSTGRES_DBNAME:
-    description: Name of postgres database
-    default: dbt_container_skeleton
 
   DTSPEC_LOG_LEVEL:
     description: Default log level for running dtspec tests
