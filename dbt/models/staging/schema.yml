@@ -16,11 +16,11 @@ models:
       - name: growth_stage
         description: "Stage of growth of company: seed/early growth/late growth"
       - name: created_at
-        description: "Date company was created at."
+        description: "Date company was created at"
       - name: total_funding_to_date
-        description: "Total amount of funding (USD) raised as of last update."
+        description: "Total amount of funding (USD) raised as of last update"
       - name: updated_at
-        description: "Date record last updated at."
+        description: "Date record last updated at"
       
 
   # - name: stg_orders

@@ -30,3 +30,7 @@ dbt run --models staging
 dbt deps
 dbt deps
 dbt deps
+dbt run --models staging
+gcloud auth application-default login   --scopes=https://www.googleapis.com/auth/bigquery,https://www.googleapis.com/auth/drive.readonly,https://www.googleapis.com/auth/iam.test
+export GOOGLE_APPLICATION_CREDENTIALS=/root/.config/gcloud/application_default_credentials.json
+dbt run --models staging
