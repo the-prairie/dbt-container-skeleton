@@ -14,8 +14,8 @@ models:
         # A single column can have multiple metrics.
         meta:
           metrics:
-            - name: num_unique_companies # this is the name of the metric.
-              type: count_distinct # this is the type of calculation that's being done
+            number_unique_companies: # this is the name of the metric.
+              type: "count_distinct" # this is the type of calculation that's being done
 
 
       - name: name
@@ -30,10 +30,9 @@ models:
         description: "Total amount of funding (USD) raised as of last update"
         meta:
           metrics:
-            - name: total_funding_to_date # this is the name of the metric.
-              type: sum # this is the type of calculation that's being done
-            - name: average_funding_to_date # this is the name of the metric.
-              type: average # this is the type of calculation that's being done
+            total_funding_to_date: # this is the name of the metric.
+              type: "sum" # this is the type of calculation that's being done
+
       - name: updated_at
         description: "Date record last updated at"
 
