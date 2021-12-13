@@ -12,13 +12,13 @@ profile: 'startup-ab-bigquery'
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that models in this project can be
 # found in the "models/" directory. You probably won't need to change these!
-source-paths: ["models"]
+model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-data-paths: ["data"]
+seed-paths: ["data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-modules-path: "{{ env_var('DBT_MODULES_DIR', 'dbt_modules') }}"
+#modules-path: "{{ env_var('DBT_MODULES_DIR', 'dbt_modules') }}"
 
 target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
